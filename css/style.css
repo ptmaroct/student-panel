@@ -1,0 +1,44 @@
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+.heading {
+	font-size: 30px;
+}
+
+.heading-sm {
+	font-size: 26px;
+}
+
+#logout {
+	width: 30%;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+
+.img-student {
+	height: 150px;
+	border-radius: 4px;
+}
+
+.img-profile{
+	height: 250px;
+}

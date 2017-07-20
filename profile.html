@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Profile | Student Panel</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/site.js"></script>
+    </head>
+
+    <body class="grey lighten-5">
+    <div class="preloader-background">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <header>
+    <!-- navbar -->
+      <nav class="blue darken-2">
+         <div class="nav-wrapper">
+           <a href="index.html" class="brand-logo">My School</a>
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+           <ul class="right hide-on-med-and-down">
+             <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+             <li><a href="attendance.html"><i class="material-icons left">assignment_ind</i>Attendance</a></li>
+             <li class="active"><a href="profile.html"><i class="material-icons left">person</i>Profile</a></li>
+             <li><a href="#" class="btn waves-effect red lighten-2">Log Out</a></li>
+           </ul>
+           <ul class="right hide-on-med-and-down">
+           </ul>
+           <ul class="side-nav" id="mobile-demo">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="attendance.html">Attendance</a></li>
+             <li class="active"><a href="profile.html">Profile</a></li>
+             <li><a href="#" class="btn waves-effect red lighten-2">Log Out</a></li>
+           </ul>
+         </div>
+       </nav>
+       <!-- navbar ends -->
+       </header>
+
+       <main>
+        <div class="container">
+          <div class="card-panel">
+            <h5>Hello <span class="cyan-text">Anuj Sharma</span>, welcome to your profile!</h5>
+          </div>
+
+          
+            <div class="row">
+              <div class="col s12 m3 center-align">
+                <img src="http://s.wsj.net/public/resources/images/BN-AB000_iudaya_DV_20131018045602.jpg" 
+                class="img-profile materialboxed">
+              </div>
+
+              <div class="col s12 m9 card-panel">
+                <h4 class="heading flow-text">Personal Details</h4> <hr>
+
+                 <table class="bordered responsive highlight">
+                  <tr>
+                    <th>Date of Birth</th>
+                    <td>26 August 1996</td>
+                  </tr>
+                  <tr>
+                    <th>Father's Name</th>
+                    <td>Rakesh Sharma</td>
+                  </tr>
+                  <tr>
+                    <th>Father's Phone No</th>
+                    <td>9365231478</td>
+                  </tr>
+                </table> 
+                
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="card-panel">
+                <h4 class="heading flow-text">More info</h4 class="heading flow-text">
+
+                  <div class="row">
+                    <div class="col m4">
+                      <div class="card-panel teal white-text">
+                          <span class="heading-sm">Address <i class="material-icons right">pin_drop</i></span> <br>
+                          A-120, Vijay Nagar, Ghaziabad 201009
+                      </div>
+                    </div>
+
+                    <div class="col m4">
+                      <div class="card-panel orange white-text">
+                          <span class="heading-sm">Attendance<i class="material-icons right">equalizer</i></span> <br>
+                          Your attendance is currently 78%
+                      </div>
+                    </div>
+
+                    <div class="col m4">
+                      <div class="card-panel cyan white-text">
+                          <span class="heading-sm">Achievements<i class="material-icons right">star</i></span> <br>
+                          First prize in singing competition
+                      </div>
+                  </div>
+                  </div>
+
+                  
+              </div>
+            </div>
+          
+        </div>
+       </main>
+
+      <footer class="page-footer blue darken-2">
+        <div class="footer-copyright">
+          <div class="container">
+            © 2017 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">Developed By XYZ</a>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>

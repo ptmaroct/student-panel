@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Attendance | Student Panel</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/site.js"></script>
+      <script type="text/javascript" src="js/chart.js"></script>
+    </head>
+
+    <body class="grey lighten-5">
+    <div class="preloader-background">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <header>
+    <!-- navbar -->
+      <nav class="blue darken-2">
+         <div class="nav-wrapper">
+           <a href="index.html" class="brand-logo">My School</a>
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+           <ul class="right hide-on-med-and-down">
+             <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+             <li class="active"><a href="#"><i class="material-icons left">assignment_ind</i>Attendance</a></li>
+             <li><a href="profile.html"><i class="material-icons left">person</i>Profile</a></li>
+             <li><a href="#" class="btn waves-effect red lighten-2">Log Out</a></li>
+           </ul>
+           <ul class="right hide-on-med-and-down">
+           </ul>
+           <ul class="side-nav" id="mobile-demo">
+             <li><a href="index.html">Home</a></li>
+             <li  class="active"><a href="#">Attendance</a></li>
+             <li><a href="profile.html">Profile</a></li>
+             <li><a href="#" class="btn waves-effect red lighten-2">Log Out</a></li>
+           </ul>
+         </div>
+       </nav>
+       <!-- navbar ends -->
+       </header>
+
+       <main>
+       <div class="container">
+         <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">trending_up</i>View your attendance graph</div>
+      <div class="collapsible-body">
+        <div class="row">
+          <div class="col s12 m6 offset-m3">
+              <canvas id="attendanceChart" width="400" height="400"></canvas> 
+           </div>
+        </div>
+
+          
+      </div>
+    </li>
+    <li>
+      
+  </ul>
+        
+         <div class="card-panel">
+           
+
+         </div>
+       </div>
+       </main>
+
+      <footer class="page-footer blue darken-2">
+        <div class="footer-copyright">
+          <div class="container">
+            © 2017 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">Developed By XYZ</a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        var ctx = document.getElementById("attendanceChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Jan","Feb","March","April"],
+        datasets: [{
+            label: 'Attendance in percent',
+            data: [80,90,95,85],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)'],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+      </script>
+    </body>
+  </html>
